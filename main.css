@@ -1,0 +1,109 @@
+/************* MIXINS *************/
+/************* START BUILD *************/
+body, html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  color: #3fb8d4; }
+
+.wrapper {
+  width: 100%;
+  height: 350px;
+  background-color: black;
+  text-align: center; }
+  .wrapper .text {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    /*margin-left: 40px;*/
+    margin-top: 150px; }
+  .wrapper .hero {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.3;
+    background: url("../images/live.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    text-align: center;
+    /*video{
+    	margin-top: -100px;
+    	min-width: 100%;
+    }*/ }
+
+.content {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .content .inner {
+    padding: 0px 40px 40px 40px;
+    margin: 0px auto;
+    max-width: 1200px;
+    text-align: left;
+    height: 100%; }
+    .content .inner .mainPic {
+      width: 100%; }
+      .content .inner .mainPic img {
+        width: 100%;
+        /*transform:rotate(-5deg);*/ }
+    .content .inner h1 {
+      margin: 40px 0 20px 0;
+      padding: 0;
+      font-weight: 300;
+      font-size: 40px;
+      color: #383737;
+      -webkit-font-smoothing: antialiased; }
+    .content .inner p {
+      color: #83969f; }
+    .content .inner .leftCol {
+      width: calc(100% - 340px);
+      margin-left: 40px;
+      float: left;
+      min-width: 300px;
+      height: 100%; }
+  .content .rightCol {
+    /*position: fixed;*/
+    /*top:0;*/
+    right: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /*margin-top: 40px;*/
+    padding: 30px;
+    /*border-radius: 5px;*/
+    float: right;
+    width: 300px;
+    height: 100%;
+    /*background-color: $lightBlue;*/
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 16px;
+    text-align: left; }
+    .content .rightCol a {
+      color: rgba(255, 255, 255, 0.8); }
+    .content .rightCol ul {
+      margin: 0;
+      padding: 0; }
+      .content .rightCol ul li {
+        list-style: none;
+        margin-bottom: 10px;
+        opacity: 0.8; }
+    .content .rightCol h3 {
+      font-size: 18px;
+      margin: 0 0 20px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+.pics .pic {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden; }
+  .pics .pic img {
+    min-height: 100%; }
